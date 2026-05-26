@@ -1,0 +1,520 @@
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+
+/* BODY */
+
+body {
+
+  font-family: Arial, sans-serif;
+
+  background: #f4fff4;
+
+  color: #333;
+}
+
+
+/* HEADER */
+
+header {
+
+  background: #054107;
+
+  color: white;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 15px 30px;
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 1000;
+
+  box-shadow:
+    0 2px 10px rgba(0,0,0,0.12);
+}
+
+
+/* LOGO */
+
+.logo {
+
+  font-size: 24px;
+
+  font-weight: bold;
+}
+
+
+/* NAV */
+
+nav {
+
+  display: flex;
+
+  gap: 30px;
+}
+
+nav a {
+
+  text-decoration: none;
+
+  color: white;
+
+  font-weight: bold;
+
+  transition: 0.2s;
+}
+
+nav a:hover {
+
+  opacity: 0.8;
+}
+
+
+/* HERO */
+
+.hero {
+
+  min-height: 60vh;
+
+  background:
+    linear-gradient(
+      rgba(0,0,0,0.45),
+      rgba(0,0,0,0.45)
+    ),
+    url("../images/greenCity.jpg");
+
+  background-size: cover;
+
+  background-position: center;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+  color: white;
+
+  padding: 30px;
+}
+
+
+/* HERO CONTENT */
+
+.hero-content {
+
+  max-width: 750px;
+}
+
+
+/* HERO H1 */
+
+.hero h1 {
+
+  font-size: 52px;
+
+  margin-bottom: 18px;
+
+  line-height: 1.1;
+}
+
+
+/* HERO P */
+
+.hero p {
+
+  font-size: 22px;
+
+  line-height: 1.5;
+}
+
+
+/* LAYOUT */
+
+.busca-mapa-layout {
+
+  display: grid;
+
+  grid-template-columns: 420px 1fr;
+
+  gap: 24px;
+
+  padding: 50px 20px;
+}
+
+
+/* PAINEL ESQUERDO */
+
+.painel-busca {
+
+  background: white;
+
+  border-radius: 24px;
+
+  padding: 24px;
+
+  height: 800px;
+
+  overflow-y: auto;
+
+  box-shadow:
+    0 6px 20px rgba(0,0,0,0.08);
+}
+
+
+/* TÍTULO */
+
+.painel-busca h2 {
+
+  font-size: 30px;
+
+  color: #054107;
+
+  margin-bottom: 24px;
+}
+
+
+/* SELECT */
+
+#selectMaterial {
+
+  width: 100%;
+
+  padding: 16px;
+
+  border-radius: 14px;
+
+  border: 2px solid #054107;
+
+  font-size: 16px;
+
+  margin-bottom: 20px;
+}
+
+
+/* CEP */
+
+.cep-user-box {
+
+  display: flex;
+
+  gap: 10px;
+
+  margin-bottom: 30px;
+}
+
+.cep-user-box input {
+
+  flex: 1;
+
+  padding: 16px;
+
+  border-radius: 14px;
+
+  border: 2px solid #054107;
+}
+
+.cep-user-box button {
+
+  width: 130px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  background: #054107;
+
+  color: white;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.cep-user-box button:hover {
+
+  background: #07610a;
+}
+
+
+/* LISTA */
+
+.lista-locais {
+
+  margin-top: 10px;
+}
+
+
+/* CARD */
+
+.local-card {
+
+  background: white;
+
+  border-radius: 18px;
+
+  padding: 24px;
+
+  margin-bottom: 20px;
+
+  box-shadow:
+    0 4px 14px rgba(0,0,0,0.08);
+
+  transition: 0.2s;
+
+  cursor: pointer;
+
+  border: 2px solid transparent;
+}
+
+.local-card:hover {
+
+  transform: translateY(-2px);
+
+  border-color: #054107;
+}
+
+
+/* CARD DESTACADO */
+
+.local-card.ativo {
+
+  border: 2px solid #054107;
+
+  transform: scale(1.02);
+
+  box-shadow:
+    0 8px 22px rgba(0,0,0,0.18);
+}
+
+
+/* CARD H3 */
+
+.local-card h3 {
+
+  color: #054107;
+
+  margin-bottom: 14px;
+
+  font-size: 22px;
+}
+
+
+/* CARD P */
+
+.local-card p {
+
+  margin-bottom: 10px;
+
+  line-height: 1.5;
+}
+
+
+/* ÍCONES */
+
+.local-card p i {
+
+  color: #054107;
+
+  width: 22px;
+
+  margin-right: 6px;
+}
+
+
+/* WHATS */
+
+.fa-whatsapp {
+
+  color: #25D366 !important;
+}
+
+
+/* LINK */
+
+.local-card a {
+
+  display: inline-block;
+
+  margin-top: 14px;
+
+  background: #054107;
+
+  color: white;
+
+  text-decoration: none;
+
+  padding: 12px 18px;
+
+  border-radius: 12px;
+
+  transition: 0.2s;
+}
+
+
+/* ÍCONE BOTÃO */
+
+.local-card a i {
+
+  color: white;
+
+  margin-right: 8px;
+}
+
+
+.local-card a:hover {
+
+  background: #07610a;
+}
+
+
+/* MAPA */
+
+.painel-mapa {
+
+  position: sticky;
+
+  top: 90px;
+
+  height: 800px;
+}
+
+
+/* MAP */
+
+#map {
+
+  width: 100%;
+
+  height: 100%;
+
+  border-radius: 24px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 6px 20px rgba(0,0,0,0.15);
+}
+
+
+/* SOBRE */
+
+.sobre {
+
+  padding: 60px 20px;
+
+  text-align: center;
+
+  background: #e8f5e9;
+}
+
+.sobre h2 {
+
+  margin-bottom: 18px;
+
+  color: #054107;
+
+  font-size: 34px;
+}
+
+.sobre p {
+
+  max-width: 800px;
+
+  margin: auto;
+
+  line-height: 1.7;
+
+  font-size: 18px;
+}
+
+
+/* FOOTER */
+
+footer {
+
+  background: #054107;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 24px;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 1100px) {
+
+  .busca-mapa-layout {
+
+    grid-template-columns: 1fr;
+  }
+
+  .painel-busca,
+  .painel-mapa {
+
+    height: auto;
+  }
+
+  #map {
+
+    height: 500px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  header {
+
+    flex-direction: column;
+
+    gap: 12px;
+  }
+
+  nav {
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+
+  .hero h1 {
+
+    font-size: 38px;
+  }
+
+  .hero p {
+
+    font-size: 18px;
+  }
+
+  .cep-user-box {
+
+    flex-direction: column;
+  }
+
+  .cep-user-box button {
+
+    width: 100%;
+  }
+}

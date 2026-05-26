@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Cadastro de Ponto de Coleta
+  </title>
+
+  <!-- CSS -->
+
+  <link
+    rel="stylesheet"
+    href="cadastroPontoColeta.css"
+  >
+
+  <!-- FONT AWESOME -->
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  >
+
+</head>
+
+<a
+  href="../../index.html"
+  class="btn-home"
+>
+
+  ← Voltar para Home
+
+</a>
+
+<body>
+
+  <div class="container">
+
+    <h1>
+      🌱 Cadastro de Ponto de Coleta
+    </h1>
+
+    <!-- PONTO EXISTENTE -->
+
+<div class="carregar-box">
+
+  <select id="pontoExistente">
+
+    <option value="">
+      Selecione ponto existente
+    </option>
+
+  </select>
+
+  <button
+    type="button"
+    class="btn-carregar"
+    onclick="carregarPontoExistente()"
+  >
+
+    Carregar
+
+  </button>
+
+</div>
+
+
+    <!-- NOME -->
+
+    <input
+      type="text"
+      id="nome"
+      placeholder="Nome do ponto"
+    >
+
+
+    <!-- CATEGORIA -->
+
+    <select
+      id="categoria"
+      onchange="carregarMateriais()"
+    >
+
+      <option value="">
+        Selecione uma categoria
+      </option>
+
+    </select>
+
+
+    <!-- MATERIAIS -->
+
+    <div class="materiais-box">
+
+      <h3>
+        Materiais recebidos
+      </h3>
+
+      <div id="listaMateriais"></div>
+
+    </div>
+
+
+    <!-- CEP -->
+
+    <div class="cep-box">
+
+      <input
+        type="text"
+        id="cep"
+        placeholder="CEP"
+      >
+
+      <button
+        type="button"
+        onclick="buscarCep()"
+      >
+        Buscar
+      </button>
+
+    </div>
+
+
+    <!-- RUA -->
+
+    <input
+      type="text"
+      id="rua"
+      placeholder="Rua"
+    >
+
+
+    <!-- NÚMERO -->
+
+    <input
+      type="text"
+      id="numero"
+      placeholder="Número"
+    >
+
+
+    <!-- BAIRRO -->
+
+    <input
+      type="text"
+      id="bairro"
+      placeholder="Bairro"
+    >
+
+
+    <!-- CIDADE -->
+
+    <input
+      type="text"
+      id="cidade"
+      placeholder="Cidade"
+    >
+
+
+    <!-- ESTADO -->
+
+    <input
+      type="text"
+      id="estado"
+      placeholder="Estado"
+    >
+
+
+    <!-- TELEFONE -->
+
+    <input
+      type="tel"
+      id="telefone"
+      placeholder="📞 Telefone de contato"
+      oninput="formatarTelefone(this)"
+    >
+
+
+    <!-- WHATSAPP -->
+
+    <div class="whatsapp-box">
+
+      <span class="whatsapp-icon">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+      </span>
+
+      <input
+        type="tel"
+        id="whatsapp"
+        placeholder="WhatsApp"
+        oninput="formatarTelefone(this)"
+      >
+
+    </div>
+
+
+    <!-- DIAS -->
+
+    <div class="materiais-box horarios-funcionamento">
+
+      <h3>
+        Dias de funcionamento
+      </h3>
+
+      <label>
+        <input type="checkbox" value="Segunda">
+        Segunda-feira
+      </label>
+
+      <label>
+        <input type="checkbox" value="Terça">
+        Terça-feira
+      </label>
+
+      <label>
+        <input type="checkbox" value="Quarta">
+        Quarta-feira
+      </label>
+
+      <label>
+        <input type="checkbox" value="Quinta">
+        Quinta-feira
+      </label>
+
+      <label>
+        <input type="checkbox" value="Sexta">
+        Sexta-feira
+      </label>
+
+      <label>
+        <input type="checkbox" value="Sábado">
+        Sábado
+      </label>
+
+      <label>
+        <input type="checkbox" value="Domingo">
+        Domingo
+      </label>
+
+    </div>
+
+
+    <!-- HORÁRIOS -->
+
+    <div class="horarios-box">
+
+      <div>
+
+        <label>
+          Horário abertura
+        </label>
+
+        <input
+          type="time"
+          id="horarioAbertura"
+        >
+
+      </div>
+
+      <div>
+
+        <label>
+          Horário fechamento
+        </label>
+
+        <input
+          type="time"
+          id="horarioFechamento"
+        >
+
+      </div>
+
+    </div>
+
+
+    <!-- DETALHES -->
+
+    <textarea
+      id="detalhes"
+      placeholder="Informações adicionais"
+    ></textarea>
+
+
+    <!-- BOTÃO -->
+
+    <button onclick="salvarPonto()">
+      Salvar ponto
+    </button>
+
+
+    <!-- STATUS -->
+
+    <p id="status"></p>
+
+  </div>
+
+
+  <!-- FIREBASE -->
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+
+  <!-- FIREBASE CONFIG -->
+
+  <script src="../../js/firebase.js"></script>
+
+
+  <!-- JS -->
+
+  <script src="./cadastroPontoColeta.js"></script>
+
+</body>
+</html>

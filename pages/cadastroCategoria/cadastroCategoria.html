@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Cadastro de Categoria
+  </title>
+
+  <!-- CSS -->
+
+  <link
+    rel="stylesheet"
+    href="cadastroCategoria.css"
+  >
+
+</head>
+
+<body>
+
+  <!-- VOLTAR -->
+
+  <a
+    href="../../index.html"
+    class="btn-home"
+  >
+
+    ← Voltar para Home
+
+  </a>
+
+
+  <div class="container">
+
+    <h1>
+      🌱 Cadastro de Categorias
+    </h1>
+
+
+    <!-- CATEGORIA EXISTENTE -->
+
+<div class="carregar-box">
+
+  <select id="categoriaExistente">
+
+    <option value="">
+      Selecione categoria existente
+    </option>
+
+  </select>
+
+  <button
+    type="button"
+    class="btn-carregar"
+    onclick="carregarCategoriaExistente()"
+  >
+
+    Carregar
+
+  </button>
+
+</div>
+
+    <!-- NOME INTERNO -->
+
+    <input
+      type="text"
+      id="nome"
+      placeholder="Nome interno (ex: eletronico)"
+    >
+
+
+    <!-- LABEL -->
+
+    <input
+      type="text"
+      id="label"
+      placeholder="Nome visível (ex: Eletrônicos)"
+    >
+
+
+    <!-- MATERIAL -->
+
+    <div class="material-box">
+
+      <input
+        type="text"
+        id="material"
+        placeholder="Digite um material"
+      >
+
+      <button
+        type="button"
+        onclick="adicionarMaterial()"
+      >
+
+        Adicionar
+
+      </button>
+
+    </div>
+
+
+    <!-- LISTA -->
+
+    <div id="listaMateriais"></div>
+
+
+    <!-- SALVAR -->
+
+    <button onclick="salvarCategoria()">
+
+      Salvar categoria
+
+    </button>
+
+
+    <!-- STATUS -->
+
+    <p id="status"></p>
+
+  </div>
+
+
+  <!-- FIREBASE -->
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+
+  <!-- FIREBASE CONFIG -->
+
+  <script src="../../js/firebase.js"></script>
+
+
+  <!-- JS -->
+
+  <script src="cadastroCategoria.js"></script>
+
+</body>
+</html>

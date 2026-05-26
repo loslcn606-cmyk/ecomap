@@ -1,0 +1,323 @@
+:root {
+
+  --verde-principal: #054107;
+
+  --verde-hover: #07610a;
+
+  --verde-borda: #3d6b45;
+
+  --verde-fundo: #eef7ef;
+}
+
+
+/* BODY */
+
+body {
+
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+
+  background:
+    linear-gradient(
+      rgba(0,0,0,0.45),
+      rgba(0,0,0,0.45)
+    ),
+    url("../../images/greenCity2.jpg");
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  min-height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 20px;
+}
+
+
+/* BOTÃO HOME */
+
+.btn-home {
+
+  position: fixed;
+
+  top: 20px;
+
+  left: 20px;
+
+  background: #054107;
+
+  color: white;
+
+  text-decoration: none;
+
+  padding: 12px 18px;
+
+  border-radius: 14px;
+
+  font-weight: bold;
+
+  z-index: 1000;
+
+  transition: 0.2s;
+
+  box-shadow:
+    0 4px 12px rgba(0,0,0,0.2);
+}
+
+.btn-home:hover {
+
+  background: #07610a;
+
+  transform: translateY(-2px);
+}
+
+
+/* CONTAINER */
+
+.container {
+
+  width: 100%;
+
+  max-width: 700px;
+
+  background: rgba(255,255,255,0.94);
+
+  backdrop-filter: blur(10px);
+
+  padding: 40px;
+
+  border-radius: 28px;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.25);
+}
+
+
+/* TÍTULO */
+
+h1 {
+
+  text-align: center;
+
+  color: var(--verde-principal);
+
+  margin-bottom: 30px;
+}
+
+
+/* CAMPOS */
+
+input,
+select,
+button {
+
+  width: 100%;
+
+  padding: 16px;
+
+  margin-bottom: 18px;
+
+  border-radius: 14px;
+
+  border: 2px solid var(--verde-borda);
+
+  box-sizing: border-box;
+
+  font-size: 16px;
+
+  transition: 0.2s;
+}
+
+
+/* FOCUS */
+
+input:focus,
+select:focus {
+
+  outline: none;
+
+  border-color: var(--verde-principal);
+
+  box-shadow:
+    0 0 0 4px rgba(5,65,7,0.15);
+}
+
+
+/* BOTÕES */
+
+button {
+
+  background: var(--verde-principal);
+
+  color: white;
+
+  border: none;
+
+  cursor: pointer;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+button:hover {
+
+  background: var(--verde-hover);
+
+  transform: scale(1.02);
+}
+
+
+/* ÁREA SELECT + CARREGAR */
+
+.carregar-box {
+
+  display: flex;
+
+  gap: 12px;
+
+  margin-bottom: 20px;
+}
+
+.carregar-box select {
+
+  flex: 1;
+
+  margin-bottom: 0;
+}
+
+.carregar-box button {
+
+  width: 220px;
+
+  margin-bottom: 0;
+}
+
+
+/* BOTÃO CARREGAR */
+
+.btn-carregar {
+
+  background: #f4b400;
+
+  color: #1f1f1f;
+}
+
+.btn-carregar:hover {
+
+  background: #d89d00;
+}
+
+
+/* MATERIAL BOX */
+
+.material-box {
+
+  display: flex;
+
+  gap: 12px;
+}
+
+.material-box button {
+
+  width: 180px;
+}
+
+
+/* LISTA */
+
+#listaMateriais {
+
+  margin-bottom: 25px;
+}
+
+
+/* ITEM */
+
+.material-item {
+
+  background: var(--verde-fundo);
+
+  padding: 14px 18px;
+
+  border-radius: 14px;
+
+  margin-bottom: 12px;
+
+  border: 2px solid var(--verde-borda);
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+
+/* REMOVER */
+
+.remover-btn {
+
+  background: #c62828;
+
+  border: none;
+
+  color: white;
+
+  padding: 8px 12px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  width: auto;
+}
+
+.remover-btn:hover {
+
+  background: #8e0000;
+}
+
+
+/* STATUS */
+
+#status {
+
+  text-align: center;
+
+  font-weight: bold;
+
+  margin-top: 15px;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 768px) {
+
+  .container {
+
+    padding: 30px 20px;
+  }
+
+  .material-box,
+  .carregar-box {
+
+    flex-direction: column;
+  }
+
+  .material-box button,
+  .carregar-box button {
+
+    width: 100%;
+  }
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    EcoMap 🌱
+  </title>
+
+  <!-- LEAFLET -->
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet/dist/leaflet.css"
+  />
+
+  <!-- FONT AWESOME -->
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <!-- CSS -->
+
+  <link
+    rel="stylesheet"
+    href="css/ecoMap.css"
+  >
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="logo">
+
+      🌱 EcoMap
+
+    </div>
+
+    <nav>
+
+      <a href="#home">
+        Home
+      </a>
+
+      <a href="#sobre">
+        Sobre
+      </a>
+
+      <a href="pages/cadastroPontoColeta/cadastroPontoColeta.html">
+        Cadastro de Pontos
+      </a>
+
+      <a href="pages/cadastroCategoria/cadastroCategoria.html">
+        Categorias
+      </a>
+
+    </nav>
+
+  </header>
+
+
+  <!-- HERO -->
+
+  <section
+    class="hero"
+    id="home"
+  >
+
+    <div class="hero-content">
+
+      <h1>
+
+        Descarte certo, cidade limpa.
+
+      </h1>
+
+      <p>
+
+        Encontre pontos de coleta de forma rápida, inteligente e sustentável.
+
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- BUSCA + MAPA -->
+
+  <section
+    class="busca-mapa-layout"
+    id="mapa"
+  >
+
+    <!-- LATERAL -->
+
+    <div class="painel-busca">
+
+      <h2>
+
+        O que deseja descartar?
+
+      </h2>
+
+
+      <!-- MATERIAL -->
+
+      <select id="selectMaterial">
+
+        <option value="">
+          Selecione um material
+        </option>
+
+      </select>
+
+
+      <!-- CEP -->
+
+      <div class="cep-user-box">
+
+        <input
+          type="text"
+          id="cepUsuario"
+          placeholder="Digite seu CEP"
+        >
+
+        <button onclick="buscarCepUsuario()">
+
+          Buscar
+
+        </button>
+
+      </div>
+
+
+      <!-- LISTA -->
+
+      <div
+        id="listaLocais"
+        class="lista-locais"
+      ></div>
+
+    </div>
+
+
+    <!-- MAPA -->
+
+    <div class="painel-mapa">
+
+      <div id="map"></div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SOBRE -->
+
+  <section
+    class="sobre"
+    id="sobre"
+  >
+
+    <h2>
+
+      Sobre o EcoMap
+
+    </h2>
+
+    <p>
+
+      O EcoMap visa conectar moradores aos pontos de coleta ideais para o descarte correto dos mais diversos tipos de materiais, 
+      promovendo sustentabilidade, consciência ambiental e uma cidade mais limpa para todos.
+
+    </p>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <p>
+
+      🌱 EcoMap • Desenvolvido por Luciano Oliveira da Silva
+
+    </p>
+
+  </footer>
+
+
+  <!-- LEAFLET -->
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+
+  <!-- FIREBASE -->
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+
+  <!-- FIREBASE CONFIG -->
+
+  <script src="js/firebase.js"></script>
+
+
+  <!-- JS -->
+
+  <script src="js/ecoMap.js"></script>
+
+</body>
+</html>
