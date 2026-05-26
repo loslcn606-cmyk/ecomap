@@ -41,8 +41,6 @@ https://loslcn606-cmyk.github.io/ecomap/
 
 ## Estrutura do projeto
 
-## Estrutura do projeto
-
 ```text
 EcoMap/
 │
