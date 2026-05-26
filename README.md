@@ -36,7 +36,6 @@ Plataforma web desenvolvida para auxiliar moradores na localização de pontos d
 
 # Estrutura do projeto
 
-```text
 EcoMap/
 │
 ├── index.html
@@ -54,20 +53,20 @@ EcoMap/
 │   ├── cadastroCategoria/
 │   └── cadastroPontoColeta/
 
-🌎 APIs utilizadas
+APIs utilizadas
 📍 ViaCEP
 
 Utilizada para preenchimento automático de endereço através do CEP.
 
 https://viacep.com.br/
 
-🗺️ Nominatim OpenStreetMap
+Nominatim OpenStreetMap
 
 Utilizada para converter endereços em coordenadas geográficas.
 
 https://nominatim.openstreetmap.org/
 
-🗺️ Mapa interativo
+Mapa interativo
 
 O sistema utiliza a biblioteca Leaflet integrada ao OpenStreetMap para:
 
@@ -75,24 +74,24 @@ exibir ecopontos
 destacar pontos selecionados
 permitir navegação
 calcular proximidade
-☁️ Firebase
+
+Firebase
 
 O Firebase Firestore foi utilizado como banco de dados em nuvem para armazenamento de:
 
 categorias
 materiais
 pontos de coleta
-📱 Responsividade
+
+Responsividade
 
 O projeto foi desenvolvido com layout responsivo para:
 
 desktop
 tablets
 smartphones
-🎯 Objetivo
 
-O EcoMap busca incentivar o descarte correto de resíduos e promover consciência ambiental através da tecnologia e acessibilidade digital.
 
-👨‍💻 Desenvolvido por
+Idealizado e desenvolvido por
 
 Luciano Oliveira da Silva
