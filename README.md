@@ -4,13 +4,12 @@ Plataforma web desenvolvida para auxiliar moradores na localização de pontos d
 
 ---
 
-# 🚀 Acesse o projeto
+# Acesse o projeto
 
 🔗 https://loslcn606-cmyk.github.io/ecomap/
 
----
 
-# 📌 Funcionalidades
+# Funcionalidades
 
 ✅ Busca de materiais recicláveis  
 ✅ Exibição de pontos de coleta  
@@ -24,9 +23,7 @@ Plataforma web desenvolvida para auxiliar moradores na localização de pontos d
 ✅ Interface responsiva  
 ✅ Integração com Firebase Firestore  
 
----
-
-# 🛠️ Tecnologias utilizadas
+# Tecnologias utilizadas
 
 - HTML5
 - CSS3
@@ -37,9 +34,7 @@ Plataforma web desenvolvida para auxiliar moradores na localização de pontos d
 - ViaCEP API
 - Nominatim API
 
----
-
-# 🗂️ Estrutura do projeto
+# Estrutura do projeto
 
 ```text
 EcoMap/
