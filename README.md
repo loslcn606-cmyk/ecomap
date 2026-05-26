@@ -41,18 +41,21 @@ https://loslcn606-cmyk.github.io/ecomap/
 
 ## Estrutura do projeto
 
+## Estrutura do projeto
+
+```text
 EcoMap/
-│
-├── index.html
 │
 ├── css/
 │   └── ecoMap.css
 │
+├── images/
+│   ├── greenCity.jpg
+│   └── greenCity2.jpg
+│
 ├── js/
 │   ├── ecoMap.js
 │   └── firebase.js
-│
-├── images/
 │
 ├── pages/
 │   ├── cadastroCategoria/
@@ -64,8 +67,11 @@ EcoMap/
 │       ├── cadastroPontoColeta.html
 │       ├── cadastroPontoColeta.css
 │       └── cadastroPontoColeta.js
-
----
+│
+├── README.md
+│
+└── index.html
+```
 
 ## APIs utilizadas
 
